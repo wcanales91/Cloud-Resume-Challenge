@@ -1,16 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walter Canales Resume </title>
-    </head>
-    <body>
-      <main>
-        <header>
-          
-        </header>
-      </main>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walter Canales - Cloud Engineer</title>
+  <style>
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #111;
+      line-height: 1.4;
+    }
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #111;
+      padding-bottom: 2px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .job-header, .edu-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .job-sub, .edu-sub {
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+    ul {
+      margin: 0 0 15px 0;
+      padding-left: 20px;
+      font-size: 13px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .visitor-counter {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+      color: #555;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
 
-    </body>
+  <h1>Walter Canales</h1>
+  <div class="contact-info">
+    Bay Shore, NY • wcanales08@outlook.com • (631) 974-6952
+  </div>
+
+  <div class="section-title">Education</div>
+  <div class="edu-header">
+    <span>Farmingdale State College</span>
+    <span>Farmingdale, NY</span>
+  </div>
+  <div class="edu-sub">
+    <span>Bachelor of Science in Information Systems (GPA: 3.5)</span>
+    <span>Dec 2023</span>
+  </div>
+
+  <div class="section-title">Experience</div>
+  <div class="job-header">
+    <span>Festo Corp</span>
+    <span>Islandia, NY</span>
+  </div>
+  <div class="job-sub">
+    <span>IT Junior Business Application Specialist</span>
+    <span>Sep 2021 – Present</span>
+  </div>
+  <ul>
+    <li>Scaled SAP Commerce Cloud (CCv2) resources and pods under peak loads to mitigate web scraping impact and maintain zero service degradation.</li>
+    <li>Engineered custom Grafana dashboard panels monitoring regional web traffic through Tencent Cloud CDNs to improve real-time telemetry and incident visibility.</li>
+    <li>Maintained 24/7 high-availability operations and 99.9%+ system uptime for enterprise platforms using Grafana, Dynatrace, and Linux CLI.</li>
+    <li>Executed Root Cause Analysis (RCA) on production failures, reducing recurring application issues and optimizing MTTD.</li>
+  </ul>
+
+  <!-- Visitor Counter Placeholder for Phase 2 -->
+  <div class="visitor-counter">
+    <span>👀 Site Visits: <strong id="visit-count">Loading...</strong></span>
+  </div>
+
+  <script>
+    // Javascript for API Gateway call will go here in Phase 2
+    document.getElementById('visit-count').innerText = '1';
+  </script>
+</body>
 </html>
